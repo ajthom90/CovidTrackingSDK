@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CTStatus {
+class CTPStatus {
     func getStatus(callback: @escaping (CTStatusResponse?, Error?) -> Void) {
         let url = URL(string: "https://api.covidtracking.com/v1/status.json")!
         URLSession.shared.dataTask(with: url) { (data, response, error) in
